@@ -16,7 +16,7 @@ class handler(BaseHTTPRequestHandler):
       data = r.json()
       message = str(data)
     else:
-      message = "Please provide a valid language abbriviation"
+      message = "Please provide a valid language abbriviation. Supported language abbriviations :ar, az, be, bg, bn, bs, cs, da, de, dz, el, en, en-gb, en-us, es, et, fa, fi, fil, fr, he, hi, hr, hu, hy, id, is, it, ja, ka, kk, km, ko, lb, lo, lt, lv, mk, mn, ms, my, ne, no, pl, pt, ro, ru, sk, sl, sq, sr, sv, sw, th, tk, uk, vi, zh "
     
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
