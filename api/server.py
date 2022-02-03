@@ -12,7 +12,9 @@ class handler(BaseHTTPRequestHandler):
 
     if 'lang' in dic:
       url = "https://fourtonfish.com/hellosalut/"
-      r = requests.get(url + dic['lang'])
+      url = url + dic['lang']
+      print(url)
+      r = requests.get
       message = str(r)
     else:
       message = "Please provide a valid language abbriviation"
