@@ -25,4 +25,4 @@ Deploy a serveless function to the cloud
 
  Change laguage to another abbriviation should change appropriatly
 
- Incase no language search criteria is provided, the server propmts "Please provide a valid language abbriviation" and displays some of the accepted language abbriviation
+ Incase no language search criteria is provided, the server prompts "Please provide a valid language abbriviation" and displays some of the accepted language abbriviations
