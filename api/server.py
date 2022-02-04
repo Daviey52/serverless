@@ -11,9 +11,9 @@ class handler(BaseHTTPRequestHandler):
     dic = dict(query_string_list)
 
     if 'lang' in dic:
-      url = "https://fourtonfish.com/hellosalut/?lang"
+      url = "https://fourtonfish.com/hellosalut/"
       r = requests.get(url + dic['lang'])
-      message = str(r)
+      message = r.json()
     else:
       message = "Please provide a valid language abbriviation"
     
